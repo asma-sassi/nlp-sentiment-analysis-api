@@ -13,7 +13,7 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
    cd nlp-api
 
 
-### 2. Create and activate the virtual environment:
+2. **Create and activate the virtual environment:**
 
 For MacOS/Linux:
 
@@ -27,13 +27,13 @@ For Windows:
 python -m venv venv
 venv\Scripts\activate
 
-### 3. Install the dependencies:
+3. **Install the dependencies:**
 
 ```bash
 pip install -r requirements.txt
 
 
-### 4. Run the Flask API:
+4. **Run the Flask API:**
 
 ```bash
 python app.py
