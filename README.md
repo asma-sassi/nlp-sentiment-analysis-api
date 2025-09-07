@@ -14,14 +14,14 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
 
 2. **Create and activate the virtual environment:**
 
-   For MacOS/Linux:
+For MacOS/Linux:
 
       ```bash
       python3 -m venv venv
       source venv/bin/activate
 
 
-   For Windows:
+For Windows:
 
       ```bash
       python -m venv venv
