@@ -15,28 +15,28 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
 
 2. **Create and activate the virtual environment:**
 
-For MacOS/Linux:
+   For MacOS/Linux:
 
-```bash
-python3 -m venv venv
-source venv/bin/activate
+      ```bash
+      python3 -m venv venv
+      source venv/bin/activate
 
-For Windows:
+   For Windows:
 
-```bash
-python -m venv venv
-venv\Scripts\activate
+      ```bash
+      python -m venv venv
+      venv\Scripts\activate
 
 3. **Install the dependencies:**
 
-```bash
-pip install -r requirements.txt
+   ```bash
+   pip install -r requirements.txt
 
 
 4. **Run the Flask API:**
 
-```bash
-python app.py
+   ```bash
+   python app.py
 
 
 ## Endpoints
@@ -46,21 +46,20 @@ python app.py
 #### Request body:
 Send a JSON object with the text you want to analyze.
 
-```json
-{
-  "text": "I am feeling good today!"
-}
-
+   ```json
+   {
+     "text": "I am feeling good today!"
+   }
 
 Response:
 The API will return the sentiment (positive/negative/neutral) and entities (like people, places, or dates) found in the text.
 
-```json
-{
-  "sentiment": "positive",
-  "entities": [["good", "ADJ"]],
-  "text": "I am feeling good today!"
-}
+   ```json
+   {
+     "sentiment": "positive",
+     "entities": [["good", "ADJ"]],
+     "text": "I am feeling good today!"
+   }
 
 
 ## Technologies Used
