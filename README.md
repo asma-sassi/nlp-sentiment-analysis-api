@@ -12,7 +12,6 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
    git clone https://github.com/your-username/nlp-api.git
    cd nlp-api
 
-
 2. **Create and activate the virtual environment:**
 
    For MacOS/Linux:
@@ -20,6 +19,7 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
       ```bash
       python3 -m venv venv
       source venv/bin/activate
+
 
    For Windows:
 
@@ -46,20 +46,20 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
 #### Request body:
 Send a JSON object with the text you want to analyze.
 
-   ```json
-   {
-     "text": "I am feeling good today!"
-   }
+```json
+{
+  "text": "I am feeling good today!"
+}
 
 Response:
 The API will return the sentiment (positive/negative/neutral) and entities (like people, places, or dates) found in the text.
 
-   ```json
-   {
-     "sentiment": "positive",
-     "entities": [["good", "ADJ"]],
-     "text": "I am feeling good today!"
-   }
+```json
+{
+  "sentiment": "positive",
+  "entities": [["good", "ADJ"]],
+  "text": "I am feeling good today!"
+}
 
 
 ## Technologies Used
