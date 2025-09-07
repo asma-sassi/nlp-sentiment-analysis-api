@@ -1,6 +1,4 @@
-# nlp-sentiment-analysis-api
-
-## NLP API (Sentiment Analysis & NER)
+# NLP API (Sentiment Analysis & NER)
 
 Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, and it helps you analyze the sentiment of a text and identify named entities (NER). It’s perfect for understanding the vibe of a text or extracting key details like names, places, and more.
 
@@ -9,19 +7,19 @@ Welcome to the NLP API! This simple API is built with **Flask** and **spaCy**, a
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/nlp-api.git
-   cd nlp-api
+   git clone https://github.com/asma-sassi/nlp-sentiment-analysis-api.git
+   cd nlp-sentiment-analysis-api
 
 2. **Create and activate the virtual environment:**
 
-For MacOS/Linux:
+   For MacOS/Linux:
 
       ```bash
       python3 -m venv venv
       source venv/bin/activate
+      ```
 
-
-For Windows:
+   For Windows:
 
       ```bash
       python -m venv venv
@@ -32,12 +30,10 @@ For Windows:
    ```bash
    pip install -r requirements.txt
 
-
 4. **Run the Flask API:**
 
    ```bash
    python app.py
-
 
 ## Endpoints
 
@@ -46,20 +42,22 @@ For Windows:
 #### Request body:
 Send a JSON object with the text you want to analyze.
 
-```json
-{
-  "text": "I am feeling good today!"
-}
+   ```json
+   {
+     "text": "I am feeling good today!"
+   }
+   ```
 
-Response:
+#### Response:
 The API will return the sentiment (positive/negative/neutral) and entities (like people, places, or dates) found in the text.
 
-```json
-{
-  "sentiment": "positive",
-  "entities": [["good", "ADJ"]],
-  "text": "I am feeling good today!"
-}
+   ```json
+   {
+     "sentiment": "positive",
+     "entities": [["good", "ADJ"]],
+     "text": "I am feeling good today!"
+   }
+   ```
 
 
 ## Technologies Used
