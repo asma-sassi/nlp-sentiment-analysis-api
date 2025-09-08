@@ -1,9 +1,9 @@
 
 from flask import Flask, request, jsonify 
-import spacy 
+import spacy.cli
 
 #load NLP model from spaCy
-nlp = spacy.load("en_core_web_sm")
+nlp = spacy.cli.download("en_core_web_sm")
 
 app = Flask(__name__)
 
